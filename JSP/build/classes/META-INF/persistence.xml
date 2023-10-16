@@ -3,7 +3,6 @@
 	<persistence-unit name="ProyectoEJB" transaction-type="JTA">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<jta-data-source>java:/PROYECTODS</jta-data-source>
-		<jar-file>jjwt-0.12.2.jar</jar-file>
 		<class>com.bigfive.entities.Analista</class>
 		<class>com.bigfive.entities.Area</class>
 		<class>com.bigfive.entities.Constancia</class>
