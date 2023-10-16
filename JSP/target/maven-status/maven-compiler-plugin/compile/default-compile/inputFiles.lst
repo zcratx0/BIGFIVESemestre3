@@ -6,6 +6,7 @@ W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\com\bigfive\serv
 W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\com\bigfive\entities\Estado.java
 W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\com\bigfive\beans\ICrud.java
 W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\com\bigfive\entities\ConvocatoriaAsistencia.java
+W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\com\bigfive\funciones\JWTExample.java
 W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\funcionalidades\DAO.java
 W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\com\bigfive\entities\Evento.java
 W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\com\bigfive\beans\ITRBeanRemote.java
@@ -14,6 +15,7 @@ W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\com\bigfive\enti
 W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\com\bigfive\beans\ITRBean.java
 W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\com\bigfive\beans\TutorBean.java
 W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\com\bigfive\beans\AnalistaBeanRemoteRemote.java
+W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\com\bigfive\servlet\AuthenticationServlet.java
 W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\com\bigfive\entities\Reclamo.java
 W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\com\bigfive\beans\EstudianteBeanRemote.java
 W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\com\bigfive\entities\Analista.java
@@ -23,6 +25,7 @@ W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\com\bigfive\enti
 W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\com\bigfive\beans\UsuarioBeanRemote.java
 W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\com\bigfive\entities\Gestion.java
 W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\com\bigfive\entities\Itr.java
+W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\com\bigfive\funciones\BFJWT.java
 W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\com\bigfive\entities\Usuario.java
 W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\com\bigfive\beans\GeneroBeanRemote.java
 W:\eclipse-workspace\JSPTest\BIGFIVESemestre3\JSP\src\main\java\com\bigfive\entities\Rol.java

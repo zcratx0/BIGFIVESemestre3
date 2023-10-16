@@ -9,10 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.wildfly.security.auth.realm.token.validator.JwtValidator;
-
 import com.bigfive.beans.UsuarioBeanRemote;
 import com.bigfive.entities.Usuario;
+import com.bigfive.funciones.BFJWT;
 
 /**
  * Servlet implementation class LoginServerlet
@@ -57,7 +56,8 @@ public class LoginServlet extends HttpServlet {
 			user = usuarioBean.loginUsuario(username, password);
 		} catch (Exception e) {}
 		if (user != null) {
-			response.sendRedirect("/JSPTest");
+			response.getWriter().write(BFJWT.createToken(user));
+			request.getRequestDispatcher("/Login.jsp").forward(request, response);
 		} else {
 			request.setAttribute("errorMessage", "Credenciales invalidas!");
 			request.getRequestDispatcher("/Login.jsp").forward(request, response);

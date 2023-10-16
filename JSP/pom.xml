@@ -5,6 +5,9 @@
     <groupId>com.bigfive</groupId>
     <artifactId>siga-s3</artifactId>
     <version>1.0</version>
+    
+    <packaging>war</packaging>
+    
     <build>
         <plugins>
             <plugin>
