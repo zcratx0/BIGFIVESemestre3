@@ -68,6 +68,7 @@
                     <th>ITR</th>
                     <th>ESTADO</th>
                     <th>GENERACIÓN</th>
+                    <th></th>
                 </tr>
                 <c:forEach items="${estList}" var="usu">
             		<tr>
@@ -83,7 +84,9 @@
             				</select>
             			</td>
             			<td>${usu.getGeneracion()}</td>
+            			<th><button class="bg-green-700 text-white p-4">MODIFICAR</button></th>
 				</c:forEach>
+				
 				<c:forEach items="${tutList}" var="usu">
             		<tr>
             			<td>${usu.getUsuario().getMailInstitucional()}</td> 

@@ -16,6 +16,7 @@ import com.bigfive.beans.EstudianteBeanRemote;
 import com.bigfive.beans.ITRBeanRemote;
 import com.bigfive.beans.TutorBeanRemote;
 import com.bigfive.beans.UsuarioBeanRemote;
+import com.bigfive.entities.Usuario;
 
 /**
  * Servlet implementation class ITRServlet
@@ -36,6 +37,11 @@ public class UsuarioServlet extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String usuario = request.getParameter("usuario");
+		
+		if (usuario != null) {
+			
+		}
 		request.setAttribute("estList", estBean.listarElementos());
 		request.setAttribute("tutList", tutBean.listarElementos());
 		request.setAttribute("anaList", anaBean.listarElementos());
