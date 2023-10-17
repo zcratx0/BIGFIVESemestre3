@@ -11,25 +11,35 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.bigfive.beans.AnalistaBeanRemoteRemote;
+import com.bigfive.beans.EstudianteBeanRemote;
 import com.bigfive.beans.ITRBeanRemote;
+import com.bigfive.beans.TutorBeanRemote;
+import com.bigfive.beans.UsuarioBeanRemote;
 
 /**
  * Servlet implementation class ITRServlet
  */
-@WebServlet("/ITRServlet")
-@RolesAllowed("ANALISTA")
-public class ITRServlet extends HttpServlet {
+@WebServlet("/usuarios")
+public class UsuarioServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	@EJB
-	private ITRBeanRemote itrBean;
-    public ITRServlet() {
+	private UsuarioBeanRemote userBean;
+	@EJB
+	private EstudianteBeanRemote estBean;
+	@EJB
+	private TutorBeanRemote tutBean;
+	@EJB
+	private AnalistaBeanRemoteRemote anaBean;
+    public UsuarioServlet() {
         super();
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-				
-		request.setAttribute("itrList", itrBean.listarElementos());
-		request.getRequestDispatcher("/ListaITR.jsp").forward(request, response);
+		request.setAttribute("estList", estBean.listarElementos());
+		request.setAttribute("tutList", tutBean.listarElementos());
+		request.setAttribute("anaList", anaBean.listarElementos());
+		request.getRequestDispatcher("/listausuarios.jsp").forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -5,6 +5,7 @@ import java.io.IOException;
 import javax.ejb.EJB;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -39,6 +40,7 @@ public class LoginServlet extends HttpServlet {
 		Usuario user = null;
 		try {
 			user = usuarioBean.loginUsuario(username, password);
+			
 		} catch (Exception e) {
 			
 		}
@@ -56,7 +58,9 @@ public class LoginServlet extends HttpServlet {
 			user = usuarioBean.loginUsuario(username, password);
 		} catch (Exception e) {}
 		if (user != null) {
-			response.getWriter().write(BFJWT.createToken(user));
+			Cookie jwtCookie = new Cookie("jwt", BFJWT.createToken(user));
+			jwtCookie.setMaxAge(60 * 60 * 24); // Establece la duración de la cookie (1 día).
+			response.addCookie(jwtCookie);
 			request.getRequestDispatcher("/Login.jsp").forward(request, response);
 		} else {
 			request.setAttribute("errorMessage", "Credenciales invalidas!");
