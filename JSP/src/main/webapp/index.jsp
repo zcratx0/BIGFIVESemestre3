@@ -29,6 +29,7 @@
 		<div class="container mx-auto text-white flex flex-col sm:flex-col md:flex-row justify-center p-5 gap-0">
             <a href="" class="flex justify-center bg-sky-800 p-4 md:w-64 transition hover:-translate-y-1 hover:scale-110 ">REGISTRO</a>
             <a href="login" class="flex justify-center bg-sky-800 p-4 md:w-64 transition hover:-translate-y-1 hover:scale-110 ">LOGIN</a>
+            <a href="usuarios" class="flex justify-center bg-sky-800 p-4 md:w-64 transition hover:-translate-y-1 hover:scale-110 ">Usuarios</a>
             <a href="itr" class="flex justify-center bg-sky-800 p-4 md:w-64 transition hover:-translate-y-1 hover:scale-110 ">IRT's</a>
         </div>
 	</div>
